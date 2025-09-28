@@ -2,3 +2,4 @@
 *.mp4
 logs
 **/__pycache__
+__pycache__
