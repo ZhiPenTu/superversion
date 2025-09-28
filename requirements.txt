@@ -1,0 +1,14 @@
+# Core video processing
+opencv-python>=4.8.0
+
+# Object detection and supervision
+supervision==0.20.0
+ultralytics==8.0.142
+
+# Configuration and data handling
+PyYAML>=6.0
+numpy>=1.21.0
+
+# Testing dependencies
+pytest>=7.0.0
+pytest-cov>=4.0.0

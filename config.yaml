@@ -1,0 +1,61 @@
+# 视频物体检测系统配置文件
+# 配置参数优先级：命令行参数 > 配置文件 > 默认值
+
+# 检测相关配置
+detection:
+  # 置信度阈值 (0.0-1.0)
+  confidence_threshold: 0.5
+  
+  # 目标检测类别列表，留空表示检测所有类别
+  target_classes: 
+    - "person"
+    - "car"
+    - "bicycle"
+    - "motorcycle"
+  
+  # 检测模型文件路径，留空使用默认模型
+  model_path: null
+
+# 视频处理配置
+video:
+  # 最大帧率限制
+  max_fps: 30
+  
+  # 显示窗口大小 [宽度, 高度]
+  display_window_size: [1280, 720]
+
+# 输出配置
+output:
+  # 是否保存标注后的视频
+  save_annotated_video: false
+  
+  # 输出目录
+  output_directory: "./output"
+  
+  # 视频编解码器
+  video_codec: "mp4v"
+
+# 系统配置
+system:
+  # 是否显示实时视频窗口
+  display_video: true
+  
+  # 日志级别
+  log_level: "INFO"
+
+# 日志配置
+logging:
+  # 日志级别 (DEBUG, INFO, WARNING, ERROR, CRITICAL)
+  level: "INFO"
+  
+  # 日志文件路径，留空表示不保存到文件
+  file_path: "./logs/video_detection.log"
+  
+  # 是否启用控制台日志输出
+  enable_console: true
+  
+  # 日志文件最大大小 (字节)
+  max_file_size: 10485760  # 10MB
+  
+  # 日志文件备份数量
+  backup_count: 5
