@@ -1,2 +1,4 @@
 *.pt
 *.mp4
+logs
+**/__pycache__
